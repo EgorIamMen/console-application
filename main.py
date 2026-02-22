@@ -3,10 +3,9 @@ from infrastructure import load_users, load_products
 from ui import auth_page, profile, shop
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent
 USERS_CSV = str(BASE_DIR / "data" / "users.csv")
 PRODUCTS_CSV = str(BASE_DIR / "data" / "products.csv")
-
 
 def main() -> None:
     state = GlobalState()
